@@ -119,12 +119,6 @@ export default defineConfig({
     },
     image: {
         domains: ["raw.githubusercontent.com", "unsplash.com"],
-        remotePatterns: [
-            {
-                protocol: "https",
-                hostname: "nf-core-**.netlify.app",
-            },
-        ],
         service: {
             entrypoint: "astro/assets/services/sharp",
         },
